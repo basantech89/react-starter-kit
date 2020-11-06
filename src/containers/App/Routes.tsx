@@ -13,6 +13,10 @@ const Routes: React.FC = () => (
 		<Router>
 			<Route component={lazy(() => import('../Home'))} path='/' />
 			<Route component={lazy(() => import('../Demo'))} path='/demo' />
+			<Route
+				component={lazy(() => import('../../components/NotFound'))}
+				default
+			/>
 		</Router>
 	</Suspense>
 )

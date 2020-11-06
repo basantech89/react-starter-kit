@@ -1,9 +1,9 @@
 import React from 'react'
 import { Spinner } from 'reactstrap'
-import './styles.scss'
+import classes from './loader.module.scss'
 
 const Loader: React.FC = () => (
-	<div className='loader'>
+	<div className={classes.loader}>
 		<Spinner />
 	</div>
 )
