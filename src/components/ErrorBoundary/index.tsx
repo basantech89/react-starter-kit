@@ -21,6 +21,7 @@ export default class ErrorBoundary extends React.Component<
 	}
 
 	componentDidCatch(error: Error) {
+		// eslint-disable-next-line no-console
 		console.error(error.message)
 	}
 
